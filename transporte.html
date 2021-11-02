@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/transporte.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <title>Peñalolén Interactivo</title>
+</head>
+<body>
+    <header class='site-header content-header'>
+        <img src="imagenes\grupo.png" alt="" class="img_grupo">
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="active">Inicio</a>
+            <a href="seguridad.html">Seguridad</a>
+            <a href="transporte.html">Transporte</a>
+            <a href="puntos_verdes.html">Puntos Verdes</a>
+            <a href="equipo.html">¿Quiénes somos?</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+    <div class="content">
+        <h2>En esta página, podemos interactuar con un mapa que muestra todos los puntos importantes, con respecto al transporte público en Peñalolén.</h2>
+        <h3>Si quiere acceder a un mapa más grande, pinche el link abajo del mapa.</h3>
+        <div class="mapa">
+            <iframe class="mapa_int" width="100%" height="550px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-70.59076309204103%2C-33.517926774201875%2C-70.47746658325197%2C-33.45478945269822&amp;layer=transportmap" style="border: 1px solid black"></iframe>
+            <br/><small class="link_mapa">
+                <a href="https://www.openstreetmap.org/#map=14/-33.4864/-70.5341&amp;layers=T" target="blank">View Larger Map</a>
+            </small>
+    <div class="footer">
+        <img src="/imagenes/uai.png" alt="uai">
+            <div class="referencias">
+                <a href="https://www.penalolen.cl/" target="blank"> <img src="/imagenes/logo_peña.png" alt="logo_peña" class="logo_peña"></a>
+                <a href="https://www.carabineros.cl/" target="blank"> <img src="/imagenes/logo_cara.png" alt="logo_carabineros" class="logo_cara"></a>
+            </div>
+        </div>
+    </div>
+    </div>
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+</body>
+</html>
