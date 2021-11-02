@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_grupo {
+    max-height: 110px;
+    display: flex;
+}
+
+.site-header {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    background-color: #333;
+}
+
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    width: 100%;
+    justify-content: left;
+}
+
+.topnav a {
+    float: left;
+    display: flex;
+    color: #f2f2f2;
+    justify-self: left;
+    text-align: justify;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.topnav a:hover {
+    color: rgb(255, 146, 5);
+}
+
+.topnav .icon {
+    display: none;
+}
+
+@media (max-width: 400px) {
+    .img_grupo {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+  }
+  
+@media screen and (max-width: 1400px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+.content {
+    background-color: rgb(224, 220, 213);
+    padding: 10px;
+    height: 870px;
+}
+
+.mapa{
+    background-position: center;
+}
+
+@media screen and (max-width: 600px) {
+    .mapa_int {
+        max-height: 400px;
+    }    
+}
+
+.link_mapa a {
+    color: black;
+    text-decoration: none;
+    display: flex;
+    font-size: 20px;
+    margin-left: 2px;
+}
+
+.link_mapa a:hover {
+    color: whitesmoke;
+}
+
+.row {
+    height: 300px;
+    padding: 10px;
+    flex: 2;
+}
+
+.footer {
+    background-color: #333;
+    height: 130px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.referencias a {
+    text-decoration: none;
+    color: #f2f2f2;
+    margin-right: 30px;
+}
+
+.referencias a:hover {
+    color: rgb(221, 137, 42);
+}
+
+.logo_peña {
+    background-color: #f2f2f2;
+    margin-top: 10px;
+}
+
+.logo_cara {
+    max-width: 64px;
+}
